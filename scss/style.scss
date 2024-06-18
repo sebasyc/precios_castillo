@@ -120,6 +120,75 @@ header {
             }
         }
     }
+    .info-castillo {
+        h3 {
+            margin: .5em 0;
+            font-size: 1.25em;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &__products {
+            margin: 2em 0 0;
+            padding: .875em .875em 1.5em;
+            background-color: darken($primary-color, 12%);
+            border-radius: 10px;
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    width: 70%;
+                    padding: .35em 0;
+                    font-size: 1em;
+                    border-bottom: 1px solid rgba(256, 256, 256, .15);
+                    &:last-child {
+                        width: 30%;
+                        font-weight: 700;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        &__contacto {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 1.5em 0 0;
+            text-align: center;
+            h3 {
+                text-transform: uppercase;
+                margin: 0 0 .25em;
+                font-size: 1.25em;
+                font-weight: 700;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                padding: .25em 1em;
+                margin: .5em 0 0;
+                border-radius: 50px;
+                span, i {
+                    display: block;
+                }
+                i {
+                    margin-right: .25em;
+                    font-size: 1.5em;
+                }
+                &.whatsapp {
+                    background-color: #25D366;
+                    font-size: 1.125em;
+                    color: black;
+                    font-weight: 700;
+                }
+                &.correo {
+                    font-size: 1em;
+                    color: white;
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 
 footer {
